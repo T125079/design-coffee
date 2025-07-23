@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>銀座 築乃鮨｜お問い合わせ</title>
+    <title>銀座 築乃鮨｜ご予約</title>
     <meta name="description"
-        content="銀座 築乃鮨は、旬の素材を活かした本格江戸前寿司をご提供する高級鮨店です。職人の技と落ち着いた空間で、極上のひとときをお楽しみください。東銀座駅から徒歩2分。ご予約・お問い合わせも承っております。">
+        content="銀座 築乃鮨のご予約ページです。旬の素材を活かした本格江戸前寿司のご予約を承っております。東銀座駅から徒歩2分。お気軽にご予約ください。">
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
@@ -20,14 +20,15 @@
     <!--header-->
     <header>
         <div class="container">
-            <div class="logo"><a href="index.html">銀座 築乃鮨</a> </div>
+            <div class="logo"><a href="index.html">銀座 築乃鮨</a></div>
             <nav class="header-menu">
                 <a href="index.html#top">トップ</a>
                 <a href="index.html#menu">お品書き</a>
                 <a href="index.html#commitment">こだわり</a>
                 <a href="index.html#access">アクセス</a>
                 <a href="index.html#news">新着情報</a>
-                <a href="index.html#contact">ご予約・お問い合わせ</a>
+                <a href="reservation.html" class="current">ご予約</a>
+                <a href="index.html#contact">お問い合わせ</a>
             </nav>
         </div>
     </header>
@@ -43,31 +44,61 @@
         <a href="index.html#commitment">こだわり</a>
         <a href="index.html#access">アクセス</a>
         <a href="index.html#news">新着情報</a>
-        <a href="index.html#contact">ご予約・お問い合わせ</a>
+        <a href="reservation.html" class="current">ご予約</a>
+        <a href="index.html#contact">お問い合わせ</a>
     </nav>
+
     <main class="lower-main">
         <div class="lower-heading-group">
-            <h2>お問い合わせ</h2>
-            <p>ご不明点などあれば、お気軽にお問い合わせください。</p>
+            <h2>ご予約フォーム</h2>
+            <p>ご予約は以下のフォームより承っております。お気軽にご入力ください。</p>
         </div>
+
         <form class="form-box">
+
             <div class="form-item">
-                <label>お名前</label>
-                <input type="text" name="name" placeholder="例）山田 太郎">
+                <label for="name">お名前<span style="color:red;">*</span></label>
+                <input type="text" id="name" name="name" placeholder="例）山田 太郎" required>
             </div>
+
             <div class="form-item">
-                <label>メールアドレス</label>
-                <input type="email" name="email" placeholder="例）example@example.com">
+                <label for="email">メールアドレス<span style="color:red;">*</span></label>
+                <input type="email" id="email" name="email" placeholder="例）example@example.com" required>
             </div>
+
             <div class="form-item">
-                <label>お問い合わせ内容</label>
-                <textarea rows="7" name="message" placeholder="例）お問い合わせ内容をご入力ください。"></textarea>
+                <label for="tel">電話番号<span style="color:red;">*</span></label>
+                <input type="tel" id="tel" name="tel" placeholder="例）03-1234-5678" required pattern="[\d\-+\s]+" title="電話番号を正しく入力してください">
             </div>
+
             <div class="form-item">
-                <button type="submit">送信する</button>
+                <label for="date">ご希望日時<span style="color:red;">*</span></label>
+                <input type="datetime-local" id="date" name="date" required>
+            </div>
+
+            <div class="form-item">
+                <label for="people">人数<span style="color:red;">*</span></label>
+                <select id="people" name="people" required>
+                    <option value="" disabled selected>選択してください</option>
+                    <option value="1名">1名</option>
+                    <option value="2名">2名</option>
+                    <option value="3名">3名</option>
+                    <option value="4名">4名</option>
+                    <option value="5名以上">5名以上</option>
+                </select>
+            </div>
+
+            <div class="form-item">
+                <label for="message">備考・ご要望</label>
+                <textarea id="message" name="message" rows="5" placeholder="アレルギーやご要望などございましたらご記入ください。"></textarea>
+            </div>
+
+            <div class="form-item">
+                <button type="submit">予約を送信する</button>
             </div>
         </form>
     </main>
+
     <!--footer-->
     <footer id="footer">
         <div class="footer-area">
@@ -82,9 +113,8 @@
                     <li><a href="index.html#commitment">こだわり</a></li>
                     <li><a href="index.html#access">アクセス</a></li>
                     <li><a href="index.html#news">新着情報</a></li>
-                    <li><a href="index.html#contact">ご予約・お問い合わせ</a></li>
+                    <li><a href="index.html#contact">お問い合わせ</a></li>
                 </ul>
-
             </div>
         </div>
         <small>&copy; tsukinozushi all rights Reserved.</small>

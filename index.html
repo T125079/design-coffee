@@ -2,219 +2,267 @@
 <html lang="ja">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DESIGN COFFEE</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <!-- GoogleFontsの読み込み -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&display=swap"
-        rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>銀座 築乃鮨｜ホーム</title>
+    <meta name="description"
+        content="銀座 築乃鮨は、旬の素材を活かした本格江戸前寿司をご提供する高級鮨店です。職人の技と落ち着いた空間で、極上のひとときをお楽しみください。東銀座駅から徒歩2分。ご予約・お問い合わせも承っております。">
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/viewport.js" defer></script>
+    <script src="js/slideshow.js" defer></script>
+    <script src="js/load.js" defer></script>
+    <script src="js/activemenu.js" defer></script>
+    <script src="js/menu.js" defer></script>
+    <script src="js/han.js" defer></script>
+    <script src="js/anime.js" defer></script>
 </head>
 
 <body>
-    <!--header-->
-    <header>
-        <h1>
-            <a href="index.html" class="logo">
-                <img src="img/logo.svg" alt="DESIGN COFFEEのロゴ">
-            </a>
-        </h1>
-        <nav>
-            <ul>
-                <li><a href="index.html#about">当店について</a></li>
-                <li><a href="index.html#menu">メニュー</a></li>
-                <li><a href="index.html#shop">当店について</a></li>
-                <li><a href="contact.html">お問い合わせ</a></li>
+    <div id="loader">
+        <h1>銀座 築乃鮨</h1>
+        <div class="progress-container">
+            <div class="progress-bar" id="progress-bar"></div>
+        </div>
+        <div class="percent" id="percent">0%</div>
+    </div>
+    <div id="overlay-slide"></div>
+    <div id="main-content" style="display: none;">
+        <header>
+            <div class="container">
+                <div class="logo"><a href="index.html">銀座 築乃鮨</a> </div>
+                <nav class="header-menu">
+                    <a href="#top">トップ</a>
+                    <a href="#menu">お品書き</a>
+                    <a href="#commitment">こだわり</a>
+                    <a href="#access">アクセス</a>
+                    <a href="#news">新着情報</a>
+                    <a href="#contact">ご予約・お問い合わせ</a>
+                </nav>
+            </div>
+        </header>
+        <div class="openbtn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
 
-            </ul>
+        <nav class="han-menu" id="han-menu">
+            <a href="#top">トップ</a>
+            <a href="#menu">お品書き</a>
+            <a href="#commitment">こだわり</a>
+            <a href="#access">アクセス</a>
+            <a href="#news">新着情報</a>
+            <a href="#contact">ご予約・お問い合わせ</a>
         </nav>
-    </header>
-    <!--herosection-->
-    <section class="hero">
-        <h2>No Coffee,No life.</h2>
-        <p>豆の産地、焙煎からこだわり抜いたコーヒー</p>
-        <a href="#about">
-            <img src="img/down.png" alt="下へスクロール">
-        </a>
-    </section>
-    <!--main-->
-    <main>
-        <!--about-->
-        <section class="main-section about" id="about">
-            <div class="container">
-                <div class="heading-group">
-                    <h2>About Us
-                        <span>当店について</span>
-                    </h2>
+
+        <div class="slideshow">
+            <div class="slide">
+                <img src="img/slide1.webp" alt="寿司1">
+                <div class="caption">職人の技が光る味わい。</div>
+            </div>
+            <div class="slide">
+                <img src="img/slide2.webp" alt="寿司2">
+                <div class="caption">至高の一貫、ここにあり。</div>
+            </div>
+        </div>
+        <section id="top">
+            <div class="main-container">
+                <h1>繊細な技と<br>季節の恵みが<br>織りなす、<br>極上の味わい</h1>
+                <p>銀座 築乃鮨では、旬の素材を活かし、職人が一貫一貫丁寧に握る本格江戸前寿司をご提供いたします。<br>
+                    目の前で繰り広げられる技と素材の調和をじっくりと味わいながら、ゆったりとした時間をお過ごしください。<br>
+                    伝統と革新が息づく、銀座の落ち着いた空間で、心に残る鮨のひとときをお届けします。</p>
+            </div>
+        </section>
+        <div class="bg1">
+            <div class="bg1-image"></div>
+        </div>
+
+        <section id="menu">
+            <div class="main-container">
+                <h1 class=" fadeUpTrigger">お品書き</h1>
+                <div class="tabs">
+                    <button class="tab-btn" data-tab="okonomi">お好み</button>
+                    <button class="tab-btn" data-tab="set">セット</button>
+                    <button class="tab-btn" data-tab="other">その他</button>
+                    <button class="tab-btn" data-tab="delivery">出前</button>
                 </div>
-                <div class="layout">
-                    <div class="image">
-                        <img src="img/about-photo.jpg" alt="当店の写真">
-                    </div>
-                    <div class="text">
-                        <img src="img/logo.svg" alt="DESIGN COFFEEのロゴ">
-                        <h3>豆にこだわった本格カフェ</h3>
-                        <p>スペシャルティコーヒー 専門店「DESIGN COFFEE 」は、2025年に東京で創業したコーヒーロースターです。</p>
-                        <p>豆の産地・焙煎からこだわり抜いたコーヒーを提供しています。</p>
-                        <p>こだわりの一杯をご提供させていただきますので、有意義な時間をお過ごしください。</p>
+                <p id="menu-description" class="menu-desc"></p>
+
+                <div id="menu-container" class="menu-grid"></div>
+                <ul id="menu-slide" class="slider"></ul>
+
+                <div id="popup" class="popup hidden">
+                    <div class="popup-content" id="popup-content">
+                        <button id="close-popup" class="close-button">✕</button>
+                        <img id="popup-img" src="" alt="">
+                        <h2 id="popup-name"></h2>
+                        <p id="popup-price"></p>
+                        <p id="popup-description"></p>
                     </div>
                 </div>
             </div>
         </section>
-        <!--menu-->
-        <section class="main-section menu" id="menu">
-            <div class="container">
-                <div class="heading-group">
-                    <h2>Menu
-                        <span>メニュー</span>
-                    </h2>
+        <section id="commitment">
+            <h1 class=" fadeUpTrigger">こだわり</h1>
+            <div class="kodawari-block">
+                <div class="kodawari-image line">
+                    <img src="img/kodawari1.webp" alt="厳選された素材" />
+                    <div class="vertical-lines"></div>
                 </div>
-                <ul class="menu-list">
-                    <li>
-                        <div class="menu-card">
-                            <img src="img/menu-1.jpg" alt="エスプレッソ">
-                            <p class="name">エスプレッソ</p>
-                            <p class="price">￥300</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="menu-card">
-                            <img src="img/menu-2.jpg" alt="カプチーノソ">
-                            <p class="name">カプチーノ</p>
-                            <p class="price">￥400</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="menu-card">
-                            <img src="img/menu-3.jpg" alt="ラテ・マキアート">
-                            <p class="name">ラテ・マキアート</p>
-                            <p class="price">￥450</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="menu-card">
-                            <img src="img/menu-4.jpg" alt="カフェラテ">
-                            <p class="name">カフェラテ</p>
-                            <p class="price">￥400</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="menu-card">
-                            <img src="img/menu-5.jpg" alt="フラットホワイト">
-                            <p class="name">フラットホワイト</p>
-                            <p class="price">￥450</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="menu-card">
-                            <img src="img/menu-6.jpg" alt="カフェ・モカ">
-                            <p class="name">カフェ・モカ</p>
-                            <p class="price">￥500</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="menu-card">
-                            <img src="img/menu-7.jpg" alt="アメリカーノ">
-                            <p class="name">アメリカーノ</p>
-                            <p class="price">￥350</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="menu-card">
-                            <img src="img/menu-8.jpg" alt="カフェ・マキアート">
-                            <p class="name">カフェ・マキアート</p>
-                            <p class="price">￥400</p>
-                        </div>
-                    </li>
-                </ul>
+                <div class="kodawari-text fadeUpTrigger">
+                    <h2>素材へのこだわり</h2>
+                    <p>
+                        毎朝、熟練の目利きが市場に赴き、旬と質にこだわった魚介を厳選。
+                        その日一番の素材を一貫に凝縮し、お客様へお届けします。
+                    </p>
+                </div>
+            </div>
+
+            <div class="kodawari-block reverse">
+                <div class="kodawari-image line">
+                    <img src="img/kodawari2.webp" alt="職人の技">
+                    <div class="vertical-lines"></div>
+                </div>
+                <div class="kodawari-text fadeUpTrigger">
+                    <h2>職人の技</h2>
+                    <p>
+                        一貫一貫に心を込めて。繊細な包丁捌きと絶妙な握りの力加減が、
+                        素材本来の味を引き立てます。
+                    </p>
+                </div>
+            </div>
+
+            <div class="kodawari-block">
+                <div class="kodawari-image line">
+                    <img src="img/kodawari3.webp" alt="空間への配慮">
+                    <div class="vertical-lines"></div>
+                </div>
+
+                <div class="kodawari-text fadeUpTrigger">
+                    <h2>空間の美学</h2>
+                    <p>
+                        銀座の隠れ家のような佇まい。木の香りと和の設えが織りなす、
+                        落ち着いた空間で心安らぐひとときを。
+                    </p>
+                </div>
             </div>
         </section>
-        <!--shop-->
-        <section class="main-section shop" id="shop">
-            <div class="container">
-                <div class="layout">
-                    <div class="text">
-                        <div class="heading-group">
-                            <h2>Shop
-                                <span>店舗情報</span>
-                            </h2>
-                        </div>
-                        <h3>DESIGN COFFEE
-                            <span>店舗情報</span>
-                        </h3>
-                        <dl>
-                            <dt>住所</dt>
-                            <dd>〒123-0001 東京都渋谷区渋谷1-2-3</dd>
-                            <dt>営業時間</dt>
-                            <dd>8:00-20:00</dd>
-                            <dt>定休日</dt>
-                            <dd>毎週水</dd>
-                            <dt>電話番号</dt>
-                            <dd>03-1234-5678</dd>
-                        </dl>
+        <div class="bg2">
+            <div class="bg2-image"></div>
+        </div>
+
+        <section id="access">
+            <div class="main-container">
+                <h1 class=" fadeUpTrigger">アクセス</h1>
+                <div class="access-content">
+                    <div class="access-info fadeUpTrigger">
+                        <h2>銀座 築乃鮨</h2>
+                        <p>〒104-0061<br>
+                            東京都中央区銀座4丁目12-15<br>
+                            東京メトロ日比谷線・都営浅草線「東銀座駅」徒歩2分</p>
+                        <p>営業時間：11:30〜14:00 / 17:30〜22:00<br>
+                            定休日：水曜日</p>
+                        <p>電話番号：<a>03-1234-5678</a></p>
                     </div>
-                    <div class="map">
+                    <div class="access-map">
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25819.779451816838!2d138.1892096!3d36.008755199999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601c50e71f7adf49%3A0x2a9c9bdd30254f00!2z5YWs56uL6KuP6Kiq5p2x5Lqs55CG56eR5aSn5a2m!5e0!3m2!1sja!2sjp!4v1749436028713!5m2!1sja!2sjp"
-                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6482.598349650727!2d139.7603892462319!3d35.66963475641257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188be9d1ae11e1%3A0x5851f1d35efc45b9!2z5paw5qmL6aeF!5e0!3m2!1sja!2sjp!4v1752675571015!5m2!1sja!2sjp"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade" title="maps"></iframe>
                     </div>
                 </div>
             </div>
         </section>
-        <!--contact-->
-        <section class="main-section contact" id="contact">
-            <div class="container">
-                <div class="heading-group">
-                    <h2>Contact
-                        <span>お問い合わせ</span>
-                    </h2>
-                </div>
-                <p> ご不明点等があれば、お気軽にお問い合わせください</p>
-                <div class="layout">
-                    <div class="tel">
-                        <p class="label">電話でお問い合わせ</p>
-                        <a href="tel:0312345678" class="number">
-                            <img src="img/icon-tel.svg" alt="電話アイコン">
-                            03-1234-5678
-                        </a>
-                        <p class="hour">受付時間:8:00~20:00(水曜定休日)</p>
+        <section id="news">
+            <div class="main-container">
+                <h1 class=" fadeUpTrigger">新着情報</h1>
+                <a href="news/2025-07-16.html">
+                    <div class="news-item">
+                        <div class="news-thumb">
+                            <img src="img/news.webp" alt="夏の限定メニュー">
+                        </div>
+                        <div class="news-content">
+                            <div class="news-date">2025年7月16日</div>
+                            <h2 class="news-title">夏の限定メニュー開始</h2>
+                            <p class="news-summary">
+                                本日より夏季限定の「炙りうなぎ握り」や「冷製茶碗蒸し」などをご提供いたします...
+                            </p>
+                        </div>
                     </div>
-                    <div class="form">
-                        <p class="label">フォームでお問い合わせ</p>
-                        <a href="contact.html" class="button">お問い合わせフォームへ</a>
+                </a>
+
+                <a href="news/2025-07-01.html">
+                    <div class="news-item">
+                        <div class="news-thumb">
+                            <img src="img/news.webp" alt="営業日のお知らせ">
+                        </div>
+                        <div class="news-content">
+                            <div class="news-date">2025年7月1日</div>
+                            <h2 class="news-title">7月の営業日について</h2>
+                            <p class="news-summary">
+                                7月の営業は通常通りですが、7月17日（水）は臨時休業とさせていただきます...
+                            </p>
+                        </div>
                     </div>
+                </a>
+                <a href="news/2025-06-20.html">
+                    <div class="news-item">
+                        <div class="news-thumb">
+                            <img src="img/news.webp" alt="サイトリニューアル">
+                        </div>
+                        <div class="news-content">
+                            <div class="news-date">2025年6月20日</div>
+                            <h2 class="news-title">公式サイトをリニューアルしました</h2>
+                            <p class="news-summary">
+                                より見やすく、スマートフォンでも快適にご覧いただけるようデザインを一新しました...
+                            </p>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+        <section id="contact">
+            <div class="main-container">
+                <h1 class=" fadeUpTrigger">ご予約・お問い合わせ</h1>
+                <p class="contact-text">
+                    ご予約やお問い合わせは以下の方法で承っております。<br>
+                    お電話、または予約ページ・お問い合わせページからお願いいたします。
+                </p>
+
+                <div class="contact-links">
+                    <a class="contact-phone">03-1234-5678</a>
+                    <a href="reservation.html" class="contact-button">予約ページへ</a>
+                    <a href="contact.html" class="contact-button">お問い合わせフォームへ</a>
                 </div>
             </div>
         </section>
-    </main>
-    <!--footer-->
-    <footer>
-        <a href="index.html" class="logo">
-            <img src="img/logo-white.svg" alt="DESIGN COFFEEのロゴ">
-        </a>
-        <nav>
-            <ul>
-                <li>
-                    <a href="index.html#about">当店について</a>
-                </li>
-                <li>
-                    <a href="index.html#menu">メニュー</a>
-                </li>
-                <li>
-                    <a href="index.html#shop">店舗情報</a>
-                </li>
-                <li>
-                    <a href="index.html#contact">お問い合わせ</a>
-                </li>
-            </ul>
-        </nav>
-        <p class="copyright">&copy; 2025 DESIGN COFFEE</p>
-    </footer>
+        <footer id="footer">
+            <div class="footer-area">
+                <div class="footer-info">
+                    <p class="footer-logo">銀座 築乃鮨</p>
+                </div>
+
+                <div class="footer-link">
+                    <ul>
+                        <li><a href="#top">トップ</a></li>
+                        <li><a href="#menu">お品書き</a></li>
+                        <li><a href="#commitment">こだわり</a></li>
+                        <li><a href="#access">アクセス</a></li>
+                        <li><a href="#news">新着情報</a></li>
+                        <li><a href="#contact">ご予約・お問い合わせ</a></li>
+                    </ul>
+
+                </div>
+            </div>
+            <small>&copy; tsukinozushi all rights Reserved.</small>
+        </footer>
+    </div>
 </body>
 
 </html>
